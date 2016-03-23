@@ -52,6 +52,10 @@ namespace cpuID
                 }
 
                 File.WriteAllLines(pathOfShip, replace);
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(ship + "...ok");
+                Console.ResetColor();
             }
 
             Console.WriteLine("Press any key to exit...");
