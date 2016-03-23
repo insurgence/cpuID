@@ -26,7 +26,7 @@ namespace cpuID
 
             foreach(string ship in cpuID)
             {
-                string pathOfShip = "./" + ship + "StartingMode.ini";
+                string pathOfShip = "./" + ship + "/StartingMode.ini";
                 if(!File.Exists(pathOfShip))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -56,6 +56,7 @@ namespace cpuID
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
+            Environment.Exit(0);
         }
     }
 }
